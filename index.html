@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    body {
+      background-color: #91e4e7;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    .todo-container {
+      background-color: rgb(225, 209, 209);
+      width: 350px;
+      margin: 0 auto;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .task-input {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 20px;
+    }
+
+    #new-task {
+      flex: 1;
+      padding: 10px;
+      font-size: 14px;
+    }
+
+    #add-task {
+      padding: 10px 15px;
+      margin-left: 10px;
+      background-color: #4caf50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    ul#task-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    ul#task-list li {
+      background-color: #f2f2f2;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 8px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .icons {
+      display: flex;
+      gap: 10px;
+    }
+
+    .icons span {
+      cursor: pointer;
+      font-size: 18px;
+    }
+
+    .icons span:hover {
+      opacity: 0.7;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>📝 My To-Do List</h1>
+    <p>Organized and Productive</p>
+  </header>
+
+  <main>
+    <div class="todo-container">
+
+      <!-- Input Field -->
+      <div class="task-input">
+        <input type="text" id="new-task" placeholder="Enter a task..." />
+        <button id="add-task">Add</button>
+      </div>
+
+      <!-- Task List -->
+      <ul id="task-list">
+        <!-- Tasks will appear here -->
+      </ul>
+
+    </div>
+  </main>
+
+  <script src="todo.js"></script>
+</body>
+</html>
